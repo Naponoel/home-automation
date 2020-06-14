@@ -16,17 +16,15 @@ try:
             msg = s.recv(16)
             if new_msg:
                 print(f'New message length: {msg[:HEADERSIZE]}')
-                print('Message: ' + full_msg)
                 msglen = int(msg[:HEADERSIZE])
                 new_msg = False
 
             full_msg += msg.decode('utf-8')
 
-            if len(full_msg)-HEADERSIZE == msglen:
+            if len(full_msg) - HEADERSIZE == msglen:
                 print('Full message: ' + full_msg[HEADERSIZE:])
                 new_msg = True
                 full_msg = ''
 
 finally:
-    print(fin_msg)
     s.close()
