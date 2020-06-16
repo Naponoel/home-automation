@@ -4,5 +4,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.7 (ZAVRSNI)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="d3" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="@types/jquery" level="application" />
   </component>
 </module>

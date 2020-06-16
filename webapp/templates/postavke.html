@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>{{ title }}</title>
+{% endblock head %}
+
+{% block master_body %}
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <ul class="navbar-nav">
+        <li>
+            <a class="navbar-brand nav-link" href="{{ url_for('main.upravljanje') }}">Upravljanje</a>
+        </li>
+        <li>
+            <a class="navbar-brand nav-link" href="{{ url_for('main.postavke') }}">Postavke</a>
+        </li>
+        <li>
+            <a class="navbar-brand nav-link" href="{{ url_for('main.odjava') }}">Odjava</a>
+        </li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block body %}
+<div class="container w-100 shadow-sm bg-light" id="container-landing">
+    <span>Postavke</span>
+</div>
+<script type="module" src="../static/js/postavke.js"></script>
+{% endblock %}
