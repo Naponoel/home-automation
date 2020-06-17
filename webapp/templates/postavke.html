@@ -2,6 +2,7 @@
 
 {% block head %}
     <title>{{ title }}</title>
+    <script type="text/javascript" src="../static/js/functions.js"></script>
 {% endblock head %}
 
 {% block master_body %}
@@ -11,7 +12,7 @@
             <a class="navbar-brand nav-link" href="{{ url_for('main.upravljanje') }}">Upravljanje</a>
         </li>
         <li>
-            <a class="navbar-brand nav-link" href="{{ url_for('main.postavke') }}">Postavke</a>
+            <a class="navbar-brand nav-link" href="{{ url_for('controlers.postavke') }}">Postavke</a>
         </li>
         <li>
             <a class="navbar-brand nav-link" href="{{ url_for('main.odjava') }}">Odjava</a>
@@ -21,8 +22,72 @@
 {% endblock %}
 
 {% block body %}
-<div class="container w-100 shadow-sm bg-light" id="container-landing">
-    <span>Postavke</span>
+<div class="container w-75 shadow-lg" id="container-login">
+    <button onclick="showHide()">Click Me</button>
+    <div class="row" id="komponenta">
+        <div class="col-md-12">
+             <form method="POST" action="" novalidate>
+                 {{ form.hidden_tag() }}
+                 <fieldset class="form-group mt-3">
+                     <div class="form-group">
+                         {{ form.lokacija.label(class="form-control-label") }}
+                             {% if form.lokacija.errors %}
+                                {{ form.lokacija(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.lokacija.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                             {% else %}
+                                 {{ form.lokacija(class="form-control form-control-lg") }}
+                             {% endif %}
+                     </div>
+                     <div class="form-group">
+                         {{ form.LAN_ip.label(class="form-control-label") }}
+                             {% if form.LAN_ip.errors %}
+                                {{ form.LAN_ip(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.LAN_ip.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                             {% else %}
+                                 {{ form.LAN_ip(class="form-control form-control-lg") }}
+                             {% endif %}
+                     </div>
+                     <div class="form-group">
+                         {{ form.funkcija_pina.label(class="form-control-label") }}
+                             {% if form.funkcija_pina.errors %}
+                                {{ form.funkcija_pina(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.funkcija_pina.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                             {% else %}
+                                 {{ form.funkcija_pina(class="form-control form-control-lg") }}
+                             {% endif %}
+                     </div>
+                     <div class="form-group">
+                         {{ form.funkcija_pina.label(class="form-control-label") }}
+                             {% if form.funkcija_pina.errors %}
+                                {{ form.funkcija_pina(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.funkcija_pina.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                             {% else %}
+                                 {{ form.funkcija_pina(class="form-control form-control-lg") }}
+                             {% endif %}
+                     </div>
+                 </fieldset>
+                 <div class="form-group">
+                     {{ form.submit(class="btn btn-outline-success") }}
+                 </div>
+             </form>
+        </div>
+    </div>
 </div>
-<script type="module" src="../static/js/postavke.js"></script>
+<!--<script type="module" src="../static/js/postavke.js"></script>-->
 {% endblock %}

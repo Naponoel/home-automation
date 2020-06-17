@@ -1,7 +1,7 @@
 from webapp.models import Korisnik, Kontroler, Pin, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from webapp import login_manager
+from webapp import login_manager, bcrypt
 
 DATABASE_URI = 'postgres+psycopg2://postgres:admin@localhost:5432/zavrsni'
 
@@ -10,8 +10,13 @@ engine = create_engine(DATABASE_URI, echo=True)
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
-session = Session()
 
+# hashed_password = bcrypt.generate_password_hash('admin').decode("utf-8")
+# djuro = Korisnik(korisnicko_ime='admin', zaporka=hashed_password)
+# a = Session()
+# a.add(djuro)
+# a.commit()
+# a.close()
 
 @login_manager.user_loader
 def load_user(user_id):

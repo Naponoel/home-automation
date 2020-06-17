@@ -33,11 +33,6 @@ def landing_page():
     return render_template("index.html", title="Welcome", form=form)
 
 
-@main.route('/postavke')
-def postavke():
-    return render_template("postavke.html", title="Welcome")
-
-
 @main.route("/upravljanje")
 @login_required
 def upravljanje():
