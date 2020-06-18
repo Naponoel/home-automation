@@ -1,6 +1,6 @@
 function showHide() {
     console.log('hehe')
-    let x = document.getElementById("komponenta");
+    let x = document.getElementById("controller-params");
     if (x.style.display === "none") {
         x.style.display = "block";
     }

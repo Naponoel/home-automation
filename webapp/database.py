@@ -18,6 +18,7 @@ Session = sessionmaker(bind=engine)
 # a.commit()
 # a.close()
 
+
 @login_manager.user_loader
 def load_user(user_id):
     sess = Session()

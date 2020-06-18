@@ -14,5 +14,4 @@ def get_controllers():
     kontroleri = s.query(Kontroler).all()
     kontroler_schema = KontrolerSchema(many=True)
     out = kontroler_schema.dump(kontroleri)
-    print(out)
-    return {'rez': out}
+    return {'response': out}

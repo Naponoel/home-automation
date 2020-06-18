@@ -22,7 +22,10 @@
 {% endblock %}
 
 {% block body %}
-<div class="container w-75 shadow-lg" id="container-login">
+<div class="container w-75 shadow-lg" id="container">
+    <div id="existing-controllers">
+<!--        Javascript appends response here!-->
+    </div>
     <button onclick="showHide()">Click Me</button>
     <div class="row" id="komponenta">
         <div class="col-md-12">
@@ -89,5 +92,5 @@
         </div>
     </div>
 </div>
-<!--<script type="module" src="../static/js/postavke.js"></script>-->
+<script type="module" src="../static/js/postavke.js"></script>
 {% endblock %}
