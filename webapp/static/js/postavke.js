@@ -9,18 +9,23 @@ $(function() {
     });
 });
 
-let getData = function(array){
+document.getElementById("new-device").addEventListener('click', function () {
+    addNewController();
+});
 
+let addNewController = function(){
+    console.log('yee')
 }
 
+
 let createData = function(array){
-    let container = document.getElementById("existing-controllers");
+    let container = document.getElementById("container");
 
     for (let i = 0; i < array.length; i++){
         console.log(array[i]);
         let controllerData = document.createElement("div");
         let headerButton = document.createElement("button");
-        headerButton.className = "btn btn-primary w-100 mt-3";
+        headerButton.className = "btn btn-outline-primary w-100 my-3";
         headerButton.id = String(i + 1);
         headerButton.innerHTML = array[i].komponenta;
 
@@ -51,11 +56,24 @@ let createData = function(array){
                 inputButton.innerHTML = 'Promjeni';
                 inputButton.type = 'button';
                 inputButton.addEventListener('click', function () {
-                    console.log('SQL komponenta: ' + headerButton.innerHTML);
-                    console.log('SQL ID komponente: ' + headerButton.id);
-                    console.log('Subsection: ' + key);
-                    console.log('Current value: ' + span.placeholder);
-                    console.log('New value: ' + span.value);
+                    // console.log('SQL komponenta: ' + headerButton.innerHTML);
+                    // console.log('SQL ID komponente: ' + headerButton.id);
+                    // console.log('Subsection: ' + key);
+                    // console.log('Current value: ' + span.placeholder);
+                    // console.log('New value: ' + span.value);
+                    $.ajax({
+                        data : {
+                            komponenta : headerButton.innerHTML,
+                            sqlID : headerButton.id,
+                            subsection : key,
+                            currentValue : span.placeholder,
+                            newValue : span.value
+                        },
+                        type : 'POST',
+                        url : 'controller-update'
+                    }).done(function (data) {
+                        console.log(data);
+                    });
                 });
                 buttonHolder.appendChild(inputButton);
 
