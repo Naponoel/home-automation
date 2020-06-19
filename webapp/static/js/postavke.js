@@ -23,35 +23,43 @@ let createData = function(array){
     let container = document.getElementById("existing-controllers");
 
     for (let i = 0; i < array.length; i++){
-        let controllerData = [];
-
         // console.log(array[i]);
-        let header = document.createElement("button");
-        header.className = "btn btn-outline-primary w-100 mt-3";
-        header.id = "controller-params-" + i;
-        header.innerHTML = array[i].komponenta;
+        let controllerData = document.createElement("div");
+        let headerButton = document.createElement("button");
+        headerButton.className = "btn btn-primary w-100 mt-3";
+        headerButton.id = "controller-params-" + i;
+        headerButton.innerHTML = array[i].komponenta;
 
         Object.keys(array[i]).forEach(function(key) {
-            let mainContainer = document.createElement('div');
-            mainContainer.className = 'input-group mt-3'
-            let spanContainer = document.createElement('div');
-            spanContainer.className = 'input-group-prepend w-25';
-            let span = document.createElement('span');
-            span.className = 'input-group-text w-100';
-            span.innerHTML = key;
-            spanContainer.appendChild(span);
-            mainContainer.appendChild(spanContainer);
-            controllerData.push(mainContainer);
-        });
-        container.appendChild(header);
+            let mainElementContainer = document.createElement('div');
+            mainElementContainer.className = 'mt-3'
 
-        // OVI ELEM-i MORAJU BITI U ZAJEDNIKOM DIV-u KOJI SE ONDA PALI I GASI
+            let text = document.createElement('p');
+            text.className = 'text-muted'
+            text.innerHTML = key + ' : ' + array[i][key];
+            mainElementContainer.appendChild(text);
 
-        controllerData.forEach(function (elem) {
-            container.appendChild(elem);
-        });
-        header.addEventListener('click', function () {
+            let inputGroup = document.createElement('div');
+            inputGroup.className = 'input-group'
 
+            let span = document.createElement('input');
+            span.className = 'form-control';
+            span.placeholder = array[i][key];
+            inputGroup.appendChild(span);
+
+            let buttonHolder = document.createElement('div');
+            buttonHolder.className = 'input-group-append';
+
+            let inputButton = document.createElement('button');
+            inputButton.className = 'btn btn-outline-success';
+            inputButton.innerHTML = 'Update'
+            inputButton.type = 'button';
+            buttonHolder.appendChild(inputButton);
+            inputGroup.appendChild(buttonHolder);
+            mainElementContainer.appendChild(inputGroup)
+            controllerData.appendChild(mainElementContainer);
         });
+        container.appendChild(headerButton);
+        container.appendChild(controllerData);
     }
 };
