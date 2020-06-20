@@ -1,28 +1,87 @@
 $(function() {
+    addNewDeviceSection();
     let request = $.ajax({
         url: '/get-controllers',
         type: 'GET'
     });
 
     request.done(function (data){
-        createData(data['response']);
+        showAvailableDevices(data['response']);
     });
 });
 
-document.getElementById("new-device").addEventListener('click', function () {
-    addNewController();
-});
+let addNewDeviceSection = function () {
+    const generalColumns = ['Naziv komponente', 'Lokacija', 'LAN IP'];
+    const PinColumns = ['Funkcija pina', 'Ime pina'];
 
-let addNewController = function(){
-    console.log('yee')
-}
+    const newDeviceContainer = document.getElementById("new-device-container");
+    const allInputs = document.createElement('div');
+    allInputs.className = 'input-group border-bottom';
+
+    let header = document.createElement('div');
+    header.className = 'w-100 py-3 text-center border-bottom';
+    let headerText = document.createElement('span');
+    headerText.innerHTML = 'Dodaj novi kontroler';
+    headerText.className = 'text-muted';
+    header.appendChild(headerText);
+    newDeviceContainer.appendChild(header);
+
+    generalColumns.forEach(function (data) {
+        let singleInputDiv = document.createElement('div');
+        singleInputDiv.className = 'w-100 my-3';
+
+        let generalInputField = document.createElement('input');
+        generalInputField.className = 'form-control';
+        generalInputField.placeholder = data;
+        generalInputField.id = data;
+
+        singleInputDiv.appendChild(generalInputField);
+        allInputs.appendChild(singleInputDiv);
+    });
+    newDeviceContainer.appendChild(allInputs);
+
+    const addPinBtn = document.createElement('button');
+    addPinBtn.innerHTML = 'Dodaj GPIO';
+    addPinBtn.className = 'btn btn-outline-success my-4';
+    newDeviceContainer.appendChild(addPinBtn);
 
 
-let createData = function(array){
-    let container = document.getElementById("container");
+    addPinBtn.addEventListener('click', function () {
+        let pinDiv = document.createElement('div');
+        pinDiv.className = 'form-check form-check-inline w-100 my-2';
+
+        PinColumns.forEach(function (data) {
+            let pinInputField = document.createElement('input');
+            pinInputField.className = 'form-control m-1';
+            pinInputField.placeholder = data;
+            pinInputField.id = data;
+
+            pinDiv.appendChild(pinInputField);
+        });
+        let pinDeleteBtn = document.createElement('button');
+        pinDeleteBtn.className = 'btn btn-danger btn-sm ml-3';
+        pinDeleteBtn.innerHTML = 'X';
+        pinDiv.appendChild(pinDeleteBtn);
+
+        pinDeleteBtn.addEventListener('click', function () {
+        pinDeleteBtn.parentElement.remove();
+        });
+        newDeviceContainer.insertBefore(pinDiv, this);
+    });
+};
+
+let showAvailableDevices = function (array) {
+    let existingDevicescontainer = document.getElementById("existing-devices-container");
+
+    let header = document.createElement('div');
+    header.className = 'w-100 py-3 text-center border-bottom';
+    let headerText = document.createElement('span');
+    headerText.innerHTML = 'Postojeći kontroleri kontroler';
+    headerText.className = 'text-muted';
+    header.appendChild(headerText);
+    existingDevicescontainer.appendChild(header);
 
     for (let i = 0; i < array.length; i++){
-        console.log(array[i]);
         let controllerData = document.createElement("div");
         let headerButton = document.createElement("button");
         headerButton.className = "btn btn-outline-primary w-100 my-3";
@@ -44,23 +103,17 @@ let createData = function(array){
 
                 let span = document.createElement('input');
                 span.className = 'form-control';
-                span.placeholder = array[i][key];
+                span.placeholder = 'Nova vrijednost...';
                 span.id = array[i][key];
                 inputGroup.appendChild(span);
 
                 let buttonHolder = document.createElement('div');
-                buttonHolder.className = 'input-group-append';
+                buttonHolder.className = 'input-group-append mb-3';
 
                 let inputButton = document.createElement('button');
                 inputButton.className = 'btn btn-outline-success';
                 inputButton.innerHTML = 'Promjeni';
-                inputButton.type = 'button';
                 inputButton.addEventListener('click', function () {
-                    // console.log('SQL komponenta: ' + headerButton.innerHTML);
-                    // console.log('SQL ID komponente: ' + headerButton.id);
-                    // console.log('Subsection: ' + key);
-                    // console.log('Current value: ' + span.placeholder);
-                    // console.log('New value: ' + span.value);
                     $.ajax({
                         data : {
                             komponenta : headerButton.innerHTML,
@@ -91,9 +144,8 @@ let createData = function(array){
             else {
                 controllerData.style.display = "none";
             }
-        })
-
-        container.appendChild(headerButton);
-        container.appendChild(controllerData);
+        });
+        existingDevicescontainer.appendChild(headerButton);
+        existingDevicescontainer.appendChild(controllerData);
     }
-};
+}
