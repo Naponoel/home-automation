@@ -21,8 +21,12 @@
 {% endblock %}
 
 {% block body %}
-<div class="container w-75 shadow mt-5" id="new-device-container"></div>
-<div class="container w-75 shadow mt-5" style="margin-bottom: 300px;" id="existing-devices-container"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" id="new-device-container"></div>
+        <div class="col-md-6" style="margin-bottom: 300px;" id="existing-devices-container"></div>
+    </div>
+</div>
 
 <script type="module" src="../static/js/postavke.js"></script>
 {% endblock %}
