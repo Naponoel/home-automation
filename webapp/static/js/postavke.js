@@ -103,7 +103,8 @@ let showAvailableDevices = function () {
         for (let i = 0; i < array.length; i++){
             let controllerData = document.createElement("div");
             let headerButton = document.createElement("button");
-            headerButton.className = "btn btn-outline-primary w-100 my-3";
+            headerButton.className = "btn btn-outline-primary my-3";
+            headerButton.style.width = '90%';
             headerButton.id = String(i + 1);
             headerButton.innerHTML = array[i].komponenta;
 

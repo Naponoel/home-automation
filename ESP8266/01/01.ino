@@ -8,14 +8,16 @@
 
 
 //EDIT THESE LINES TO MATCH YOUR SETUP
-#define MQTT_SERVER "172.105.76.166"
-const char* ssid = "Wifac";
-const char* password = "heksa4389px20";
+// #define MQTT_SERVER "172.105.76.166"
+#define MQTT_SERVER "192.168.1.101"
+const char* ssid = "TP-Link_2BC6";
+const char* password = "83911903";
 
 //LED on ESP8266 GPIO2
 const int lightPin = 2;
 
 char* lightTopic = "/test/light1";
+char* getCommand = "/listenCommands";
 
 
 WiFiClient wifiClient;
