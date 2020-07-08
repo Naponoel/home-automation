@@ -24,14 +24,16 @@ def load_user(user_id):
     sess = Session()
     return sess.query(Korisnik).get(int(user_id))
 
+
+# session = Session()
 # esp1 = Kontroler(komponenta='esp8266-kuhinja')
-# GPIO1 = Pin(kontroler_id=esp1.id, oznaka_pina='GPIO-kuhinja-svijetlo')
-# GPIO2 = Pin(kontroler_id=esp1.id, oznaka_pina='GPIO-kupaona-ventilator')
+# GPIO1 = Pin(oznaka_pina='GPIO-kuhinja-svijetlo', funkcija_pina='rasvjeta')
+# GPIO2 = Pin(oznaka_pina='GPIO-kupaona-ventilator', funkcija_pina='ventilator')
 #
 # esp1.pinovi = [GPIO1, GPIO2]
 #
 # session.add(esp1)
-# a = session.query(Kontroler).filter(Kontroler.komponenta=='esp8266-kuhinja').all()
+# a = session.query(Kontroler).filter(Kontroler.komponenta == 'esp8266-kuhinja').all()
 # a = a[1]
 # a.pinovi
 # a.pinovi[1].parent_kontroler
