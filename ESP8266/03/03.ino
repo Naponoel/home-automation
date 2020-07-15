@@ -53,6 +53,7 @@ void connect_or_reconnect() {
         Serial.print("\nMQTT connection\t\tOK\n");
         //client.subscribe(lightTopic);
         }
+        delay(1000);
       }
     }
   }
