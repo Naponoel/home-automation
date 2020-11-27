@@ -11,7 +11,13 @@ class Config:
     PSQL_SERVER_DATABASE = os.environ.get("HOME_AUTO_PSQL_DATABASE")
     PSQL_SERVER_PASSWORD = os.environ.get("HOME_AUTO_PSQL_PASS")
 
-    # Setup for mail account (used for password resetting)
+    psql_ip = "localhost"
+    psql_port = "5432"
+    psql_user = "postgres"
+    psql_pass = "admin"
+    psql_db_name = "zavrsni-localhost"
+
+    # Used for password resetting
     MAIL_SERVER = "smtp.googlemail.com"
     MAIL_PORT = 587
     MAIL_USE_TLS = True

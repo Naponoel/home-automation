@@ -11,7 +11,7 @@
             <a class="navbar-brand nav-link" href="{{ url_for('main.upravljanje') }}">Upravljanje</a>
         </li>
         <li>
-            <a class="navbar-brand nav-link" href="{{ url_for('controlers.postavke') }}">Postavke</a>
+            <a class="navbar-brand nav-link" href="{{ url_for('main.postavke') }}">Postavke</a>
         </li>
         <li>
             <a class="navbar-brand nav-link" href="{{ url_for('main.odjava') }}">Odjava</a>
@@ -21,12 +21,6 @@
 {% endblock %}
 
 {% block body %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-6" id="new-device-container"></div>
-        <div class="col-md-6" style="margin-bottom: 300px;" id="existing-devices-container"></div>
-    </div>
-</div>
-
+<div class="w-50 mx-auto" id="devices"></div>
 <script type="module" src="../static/js/postavke.js"></script>
 {% endblock %}
