@@ -10,19 +10,27 @@ api = Blueprint("api", __name__)
 @api.route('/get-controllers', methods=['POST'])
 @login_required
 def get_controllers():
-    controlers = list()
+    controlers = dict()
+    pair = dict()
+    pin_list = list()
+    main_list = list()
     with session_scope() as s:
         query = s.query(Microcontroller).all()
         if query:
             for controler in query:
-                controlers.append(controler.serialize())
-    return {'response': controlers}
+                for pin in controler.pins:
+                    pin_list.append(pin.serialize())
+                controler_info = controler.serialize()
+                pair['controller_info'] = controler_info
+                pair['pins'] = pin_list
+                main_list.append(pair)
+            return json.dumps(main_list)
+    return json.dumps(controlers)
 
 
 @api.route('/update-controller-name', methods=['POST'])
 @login_required
 def update_controller_name():
-    print(request.form)
     with session_scope() as s:
         uC = s.query(Microcontroller).filter_by(mac_address=str(request.form["controler_id"])).one()
         uC.controller_name = request.form["new_name"]
@@ -42,8 +50,8 @@ def get_active_microcontrollers():
             for controler in query:
                 controlers[controler.mac_address] = controler.serialize()
                 for pin in controler.pins:
-                    pins['pin_name'] = pin.embeded_pin_name
-                    pins[pin.embeded_pin_name] = pin.serialize()
+                    if pin.active is True and pin.io_type == "OUTPUT":
+                        pins[pin.embeded_pin_name] = pin.serialize()
                 main_dict[controler.mac_address] = pins
             return json.dumps(main_dict)
         else:
@@ -53,11 +61,32 @@ def get_active_microcontrollers():
 @api.route('/activate-microcontroller', methods=['POST'])
 @login_required
 def activate_microcontroller():
-    print(request.form)
     with session_scope() as s:
         uC = s.query(Microcontroller).filter_by(mac_address=str(request.form["controler_id"])).one()
         uC.active = True
         s.add(uC)
+        s.commit()
+    return {'response': 200}
+
+
+@api.route('/activate-pin', methods=['POST'])
+@login_required
+def activate_pin():
+    with session_scope() as s:
+        pin = s.query(Pin).filter_by(id=str(request.form["element_id"])).one()
+        pin.active = True
+        s.add(pin)
+        s.commit()
+    return {'response': 200}
+
+
+@api.route('/deactivate-pin', methods=['POST'])
+@login_required
+def deactivate_pin():
+    with session_scope() as s:
+        pin = s.query(Pin).filter_by(id=str(request.form["element_id"])).one()
+        pin.active = False
+        s.add(pin)
         s.commit()
     return {'response': 200}
 

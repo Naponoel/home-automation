@@ -3,8 +3,27 @@ $(function () {
         type: 'POST',
         url: 'get-active-microcontrollers'
     }).done(function (data) {
+        console.log(data);
         let parsed = JSON.parse(data);
         console.log(parsed);
+        // let microcontroller_keys = Object.keys(parsed);
+        //
+        // microcontroller_keys.forEach(function (key){
+        //     let microcontroller_pin_values = parsed[key];
+        //     console.log(microcontroller_pin_values);
+        //
+        //     let microcontroller_pin_value_keys = Object.keys(parsed[key]);
+        //     console.log(microcontroller_pin_value_keys);
+        //
+        //     // microcontroller_pin_value_keys.forEach(function (key){
+        //     //     let pin_data = microcontroller_pin_values[key]
+        //     //
+        //     //     console.log(pin_data.embeded_pin_name);
+        //     //     // if (pin_data.active === false){
+        //     //     //     console.log(pin_data.embeded_pin_name);
+        //     //     // }
+        //     // });
+        // });
 
             // Object.values(item).forEach(function (ite){
             //     console.log(ite)
