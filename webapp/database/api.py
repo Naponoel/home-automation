@@ -75,6 +75,8 @@ def activate_pin():
     with session_scope() as s:
         pin = s.query(Pin).filter_by(id=str(request.form["element_id"])).one()
         pin.active = True
+        if request.form["friendly_name"]:
+            pin.used_for = str(request.form["friendly_name"])
         s.add(pin)
         s.commit()
     return {'response': 200}

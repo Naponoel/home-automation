@@ -4,9 +4,9 @@ $(function (){
         url : 'get-controllers'
     }).done(function (data) {
         let parsed = JSON.parse(data);
-        console.log(parsed);
+        // console.log(parsed);
         parsed.forEach(function (item){
-            console.log(item);
+            // console.log(item);
             // Main container
             const all_devices = document.getElementById("devices");
             all_devices.id = 'Main-container';
@@ -55,7 +55,7 @@ $(function (){
                         type : 'POST',
                         url : 'activate-microcontroller'
                     }).done(function () {
-                        console.log('activated')
+                        // console.log('activated')
                     });
                 }
                 else {
@@ -64,7 +64,7 @@ $(function (){
                         type : 'POST',
                         url : 'deactivate-microcontroller'
                     }).done(function () {
-                        console.log('deactivated')
+                        // console.log('deactivated')
                     });
                 }
             });
@@ -115,7 +115,7 @@ $(function (){
                     type : 'POST',
                     url : 'update-controller-name'
                     }).done(function () {
-                        console.log('Name change successful')
+                        // console.log('Name change successful')
                     });
             });
             // Append childs
@@ -155,10 +155,16 @@ $(function (){
 
                     // Create human readable name container
                     let human_readable_name = document.createElement("td");
-                    human_readable_name.className = 'text-muted';
-                    let readable_name = document.createElement('label');
-                    readable_name.innerHTML = '[' + element.used_for + ']';
-                    human_readable_name.appendChild(readable_name);
+                    let friendly_name = document.createElement('input');
+                    friendly_name.className = 'form-control';
+                    console.log(element.used_for);
+                    if (element.used_for !== null){
+                        friendly_name.placeholder = element.used_for;
+                    }
+                    else {
+                        friendly_name.placeholder = 'Funkcija';
+                    }
+                    human_readable_name.appendChild(friendly_name);
 
                     // Create checkbox container
                     let checkbox_cell = document.createElement("td");
@@ -167,14 +173,20 @@ $(function (){
                     active_checkbox.type = 'checkbox';
                     active_checkbox.checked = element.active;
                     active_checkbox.addEventListener('click', function (){
-                        let data = {"element_id":element.id}
+                        let data;
+                        if (element.user_for !== "Funkcija"){
+                            data = {"element_id":element.id, "friendly_name":friendly_name.value}
+                        }
+                        else{
+                            data = {"element_id":element.id}
+                        }
                         if (active_checkbox.checked === true){
                             $.ajax({
                                 data : data,
                                 type : 'POST',
                                 url : 'activate-pin'
                             }).done(function () {
-                                console.log('pin activated')
+                                // console.log('pin activated')
                             });
                         }
                         else {
@@ -183,7 +195,7 @@ $(function (){
                                 type : 'POST',
                                 url : 'deactivate-pin'
                             }).done(function () {
-                                console.log('pin deactivated')
+                                // console.log('pin deactivated')
                             });
                         }
                     });
