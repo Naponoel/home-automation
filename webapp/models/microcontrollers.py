@@ -33,3 +33,14 @@ class Pin(Base):
 
     parent_id = Column(Integer, ForeignKey('microcontrollers.id'))
     parent_microcontroller = relationship("Microcontroller", back_populates="pins")
+
+    def serialize(self):
+        return {
+            'id': self.id,
+            'parent_id': self.parent_id,
+            'embeded_pin_name': self.embeded_pin_name,
+            'used_for': self.used_for,
+            'io_type': self.io_type,
+            'active': self.active,
+            'current_value': self.current_value
+        }

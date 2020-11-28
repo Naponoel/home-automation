@@ -37,13 +37,13 @@ def landing_page():
                 )
             else:
                 flash("Login unsuccessful. Try Again.", "danger")
-    return render_template("index.html", title="Welcome", form=form)
+    return render_template("index.html", title="Prijava", form=form)
 
 
 @main.route("/upravljanje")
 @login_required
 def upravljanje():
-    return render_template("upravljanje.html", title="Overview"), {'mimetype': 'text/javascript'}
+    return render_template("upravljanje.html", title="Upravljanje"), {'mimetype': 'text/javascript'}
 
 
 @main.route("/odjava")

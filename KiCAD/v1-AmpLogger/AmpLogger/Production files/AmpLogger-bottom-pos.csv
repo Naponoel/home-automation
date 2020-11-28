@@ -1,0 +1,35 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,330 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,149.5,-75.25,180,bottom
+C2,100 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,139.3175,-67.25,0,bottom
+C3,100 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,146.25,-76,90,bottom
+C4,47 uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,150,-80.75,0,bottom
+C5,1 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,170,-126.25,0,bottom
+C6,1 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,169.5,-122.7875,270,bottom
+C7,22 pF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,145.4625,-87.25,180,bottom
+C8,22 pF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,142.9625,-84.75,180,bottom
+C9,100 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,150,-78.25,0,bottom
+C10,100 nF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,133.75,-95.2875,270,bottom
+C11,10 uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,131.5,-95.25,270,bottom
+D1,1N4148W,D_SOD-123,160,-71.75,90,bottom
+D2,1N4148W,D_SOD-123,160,-111,90,bottom
+D7,1N4148W,D_SOD-123,119.25,-68.35,270,bottom
+D8,1N4148W,D_SOD-123,119.25,-76.35,270,bottom
+R1,2.1k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,136.5,-76.25,270,bottom
+R2,2.1k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,145.5,-96,90,bottom
+R3,220,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,125.75,-92.55,90,bottom
+R4,220,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,125.75,-97.75,90,bottom
+R5,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,132.7,-88.25,0,bottom
+R6,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,132.8,-90.75,0,bottom
+R7,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,141.25,-100,0,bottom
+R8,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,141.25,-102.5,0,bottom
+R9,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,129.25,-118.5,270,bottom
+R10,220,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,136.5,-117.75,270,bottom
+R11,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,132.75,-110.75,0,bottom
+R12,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,132.7,-108.25,0,bottom
+R13,220,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,125.75,-76.5,90,bottom
+R14,220,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,125.75,-87.3,90,bottom
+R15,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,125.75,-71,90,bottom
+R16,10k,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,125.75,-81.7,90,bottom
+S1,ACS712xLCTR-20A,SOIC-8_3.9x4.9mm_P1.27mm,165,-122.5,270,bottom
+S2,ACS712xLCTR-20A,SOIC-8_3.9x4.9mm_P1.27mm,174.5,-121.75,180,bottom
+U2,AMS1117-3.3,SOT-223,141.5,-78.5,270,bottom

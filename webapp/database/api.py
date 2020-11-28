@@ -2,33 +2,75 @@ from flask import Blueprint, request
 from flask_login import login_required
 from webapp.database.session_generator import session_scope
 from models import Microcontroller, Pin
+import json
 
 api = Blueprint("api", __name__)
 
 
-@api.route('/uninitialised-controllers', methods=['POST'])
+@api.route('/get-controllers', methods=['POST'])
 @login_required
-def uninitialised_controllers():
+def get_controllers():
     controlers = list()
     with session_scope() as s:
-        query = s.query(Microcontroller).filter_by(active=False).all()
+        query = s.query(Microcontroller).all()
         if query:
             for controler in query:
                 controlers.append(controler.serialize())
-    print(controlers)
     return {'response': controlers}
 
 
 @api.route('/update-controller-name', methods=['POST'])
 @login_required
 def update_controller_name():
-    print(request.form["new_name"])
+    print(request.form)
     with session_scope() as s:
         uC = s.query(Microcontroller).filter_by(mac_address=str(request.form["controler_id"])).one()
         uC.controller_name = request.form["new_name"]
         s.commit()
     return {'response': 200}
 
+
+@api.route('/get-active-microcontrollers', methods=['POST'])
+@login_required
+def get_active_microcontrollers():
+    controlers = dict()
+    pins = dict()
+    main_dict = dict()
+    with session_scope() as s:
+        query = s.query(Microcontroller).filter_by(active=True).all()
+        if query:
+            for controler in query:
+                controlers[controler.mac_address] = controler.serialize()
+                for pin in controler.pins:
+                    pins['pin_name'] = pin.embeded_pin_name
+                    pins[pin.embeded_pin_name] = pin.serialize()
+                main_dict[controler.mac_address] = pins
+            return json.dumps(main_dict)
+        else:
+            return json.dumps({'response': 'NoActiveMicrocontrollers'})
+
+
+@api.route('/activate-microcontroller', methods=['POST'])
+@login_required
+def activate_microcontroller():
+    print(request.form)
+    with session_scope() as s:
+        uC = s.query(Microcontroller).filter_by(mac_address=str(request.form["controler_id"])).one()
+        uC.active = True
+        s.add(uC)
+        s.commit()
+    return {'response': 200}
+
+
+@api.route('/deactivate-microcontroller', methods=['POST'])
+@login_required
+def deactivate_microcontroller():
+    with session_scope() as s:
+        uC = s.query(Microcontroller).filter_by(mac_address=str(request.form["controler_id"])).one()
+        uC.active = False
+        s.add(uC)
+        s.commit()
+    return {'response': 200}
 
 # @api.route('/add-new-controller', methods=['POST'])
 # @login_required
