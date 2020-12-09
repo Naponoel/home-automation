@@ -117,6 +117,8 @@ def switch_pin_state():
     if "PMW" in pin_embeded_name:
         if command_value == 1:
             command_value = 250
+        elif command_value == 0:
+            command_value = 0
     # command_string in format:
     # "{\"type\":\"requestCommand\", \"PR1\":1}"
     command_string = '{\"type\":\"requestCommand\", \"' + pin_embeded_name + '\":' + str(command_value) + '}'
