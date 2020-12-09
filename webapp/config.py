@@ -11,6 +11,11 @@ class Config:
     PSQL_SERVER_DATABASE = os.environ.get("HOME_AUTO_PSQL_DATABASE")
     PSQL_SERVER_PASSWORD = os.environ.get("HOME_AUTO_PSQL_PASS")
 
+    # MQTT
+    MQTT_BROKER_URL = '172.105.76.166'
+    MQTT_BROKER_PORT = 1883
+
+    # todo: env vars
     psql_ip = "localhost"
     psql_port = "5432"
     psql_user = "postgres"

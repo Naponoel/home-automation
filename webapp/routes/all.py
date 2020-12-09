@@ -43,16 +43,16 @@ def landing_page():
 @main.route("/upravljanje")
 @login_required
 def upravljanje():
-    return render_template("upravljanje.html", title="Upravljanje"), {'mimetype': 'text/javascript'}
-
-
-@main.route("/odjava")
-def odjava():
-    logout_user()
-    return redirect(url_for("main.landing_page"))
+    return render_template("upravljanje.html", title="Upravljanje")
 
 
 @main.route('/postavke')
 @login_required
 def postavke():
     return render_template("postavke.html", title="Postavke")
+
+
+@main.route("/odjava")
+def odjava():
+    logout_user()
+    return redirect(url_for("main.landing_page"))

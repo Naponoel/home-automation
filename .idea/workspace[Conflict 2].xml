@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f35ce3bb-b234-4adb-a117-9a3fc5646ad6" name="Default Changelist" comment="" />
+    <list id="714a40f2-0419-4ee7-b759-270d078bea23" name="Added sqa_3.py; working properly, ready for implementation" comment="">
+      <change beforePath="$PROJECT_DIR$/webapp/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JupyterTrust" id="0e7d6b7d-bff5-484a-960d-33447779afc3" />
+  <component name="ProjectId" id="1cr9m3ySVPNC8O1bsK8GOQ024eJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Leon\Google Drive\FAKS\ZAVRSNI\webapp\templates" />
+      <recent name="C:\Users\Leon\Google Drive\FAKS\ZAVRSNI\webapp\static\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="audio2text - 01" type="PythonConfigurationType" factoryName="Python">
+      <module name="ZAVRSNI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Leon\Desktop\venvs\ZAVRSNI\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sveIsvasta/voice2text" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sveIsvasta/voice2text/01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="audio2text - 02" type="PythonConfigurationType" factoryName="Python">
+      <module name="ZAVRSNI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Leon\Desktop\venvs\ZAVRSNI\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sveIsvasta/voice2text" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sveIsvasta/voice2text/02.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="audio2text - 03" type="PythonConfigurationType" factoryName="Python">
+      <module name="ZAVRSNI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Leon\Desktop\venvs\ZAVRSNI\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sveIsvasta/voice2text" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sveIsvasta/voice2text/03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mqtt_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ZAVRSNI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Zarko\Desktop\venvs\Zavrsni\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mqtt_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ZAVRSNI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sqa_3" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ZAVRSNI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqa_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ZAVRSNI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.audio2text - 01" />
+      <item itemvalue="Python.audio2text - 02" />
+      <item itemvalue="Python.audio2text - 03" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.mqtt_test" />
+      <item itemvalue="Python.sqa_3" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f35ce3bb-b234-4adb-a117-9a3fc5646ad6" name="Default Changelist" comment="" />
+      <created>1591276000834</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591276000834</updated>
+      <workItem from="1591276003599" duration="344000" />
+      <workItem from="1591293430710" duration="597000" />
+      <workItem from="1591363442859" duration="595000" />
+      <workItem from="1591432479660" duration="4568000" />
+      <workItem from="1591437200726" duration="2280000" />
+      <workItem from="1591638239343" duration="508000" />
+      <workItem from="1591638922560" duration="2748000" />
+      <workItem from="1591697461719" duration="3610000" />
+      <workItem from="1591787452171" duration="639000" />
+      <workItem from="1591793545767" duration="1197000" />
+      <workItem from="1591874735426" duration="569000" />
+      <workItem from="1591913519983" duration="27000" />
+      <workItem from="1591966330695" duration="6868000" />
+      <workItem from="1591988347245" duration="33000" />
+      <workItem from="1591990711665" duration="478000" />
+      <workItem from="1591996236065" duration="340000" />
+      <workItem from="1592038716395" duration="1134000" />
+      <workItem from="1592139652753" duration="4823000" />
+      <workItem from="1592166822393" duration="1574000" />
+      <workItem from="1592223347895" duration="2987000" />
+      <workItem from="1592247239128" duration="863000" />
+      <workItem from="1592253552448" duration="594000" />
+      <workItem from="1592298416594" duration="1044000" />
+      <workItem from="1592299514447" duration="71000" />
+      <workItem from="1592306450658" duration="6418000" />
+      <workItem from="1592317395903" duration="9760000" />
+      <workItem from="1592428443220" duration="6675000" />
+      <workItem from="1592499557939" duration="287000" />
+      <workItem from="1592508776959" duration="9379000" />
+      <workItem from="1592520991303" duration="1828000" />
+      <workItem from="1592559679934" duration="3920000" />
+      <workItem from="1592578825367" duration="6900000" />
+      <workItem from="1592660063803" duration="1373000" />
+      <workItem from="1592665026265" duration="40000" />
+      <workItem from="1592665093935" duration="4304000" />
+      <workItem from="1592688781585" duration="7781000" />
+      <workItem from="1592736131780" duration="10731000" />
+      <workItem from="1592865518805" duration="3296000" />
+      <workItem from="1592902046006" duration="3818000" />
+      <workItem from="1593203235335" duration="1359000" />
+      <workItem from="1593634671244" duration="1238000" />
+      <workItem from="1593708386422" duration="678000" />
+      <workItem from="1593709145007" duration="257000" />
+      <workItem from="1593710775136" duration="702000" />
+      <workItem from="1593711522500" duration="646000" />
+      <workItem from="1593712512850" duration="250000" />
+      <workItem from="1593712787009" duration="2528000" />
+      <workItem from="1594181566429" duration="632000" />
+      <workItem from="1594182230992" duration="1693000" />
+      <workItem from="1594230852667" duration="929000" />
+      <workItem from="1594382184143" duration="593000" />
+      <workItem from="1594383253592" duration="132000" />
+      <workItem from="1594383422527" duration="2655000" />
+      <workItem from="1594401681289" duration="1880000" />
+      <workItem from="1594537759445" duration="589000" />
+      <workItem from="1594787909896" duration="1652000" />
+      <workItem from="1595585878010" duration="43000" />
+      <workItem from="1595586118557" duration="598000" />
+      <workItem from="1599490125139" duration="1251000" />
+      <workItem from="1599862613011" duration="1282000" />
+      <workItem from="1600356030968" duration="1239000" />
+      <workItem from="1600366700438" duration="634000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1591276301137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591276301137</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Socketing (lerning and testing)">
+      <created>1591978391157</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591978391158</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added test.py; can communicate with remote via sockets">
+      <created>1592144963973</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592144963974</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added mqtt_test.py; Remote MQTT working properly">
+      <created>1592150855832</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592150855832</updated>
+    </task>
+    <task id="LOCAL-00005" summary="sqa_test has Korisnik, Kontroler and Pin SQL class">
+      <created>1592253680251</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592253680251</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added sqa_3.py; working properly, ready for implementation">
+      <created>1592313157965</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592313157965</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added sqa_3.py; working properly, ready for implementation">
+      <created>1592315710206</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592315710206</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added login functionality, bcrypt, &quot;upravljanje&quot;, &quot;postavke&quot; html pages, added navbar and logout functionality">
+      <created>1592335458625</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592335458626</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added &quot;backend&quot; package (used exclusively for back-end communication for front-end i.e. for AJAX). Added &quot;controllers&quot; package (routes and forms for adding new LAN devices). Added functions.js (exclusively for front-end i.e. for showing and hiding elements). Added Flask-Marshmallow used for converting SQLAlchemy objects into JSON format for front-end">
+      <created>1592435118278</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592435118278</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Javascript pulling and showin controllers that are existing in .db">
+      <created>1592523933660</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592523933660</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Created proper update fileds">
+      <created>1592563620512</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592563620512</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Grabbing values from input done">
+      <created>1592582036583</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592582036584</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added &quot;Add new device&quot; button and simple working functionality">
+      <created>1592586802309</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592586802309</updated>
+    </task>
+    <task id="LOCAL-00014" summary="&quot;/postavke&quot; front-end working properly.">
+      <created>1592695331522</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1592695331522</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Everything working except adding pins to a new controller">
+      <created>1592750009211</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1592750009212</updated>
+    </task>
+    <task id="LOCAL-00016" summary="testing with speech recognition">
+      <created>1593715970072</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593715970072</updated>
+    </task>
+    <task id="LOCAL-00017" summary="sync, working on laptop">
+      <created>1594184092637</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594184092637</updated>
+    </task>
+    <task id="LOCAL-00018" summary="sync">
+      <created>1594790481820</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594790481820</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial" />
+    <MESSAGE value="Socketing (lerning and testing)" />
+    <MESSAGE value="Added test.py; can communicate with remote via sockets" />
+    <MESSAGE value="Added mqtt_test.py; Remote MQTT working properly" />
+    <MESSAGE value="sqa_test has Korisnik, Kontroler and Pin SQL class" />
+    <MESSAGE value="Added sqa_3.py; working properly, ready for implementation" />
+    <MESSAGE value="Added login functionality, bcrypt, &quot;upravljanje&quot;, &quot;postavke&quot; html pages, added navbar and logout functionality" />
+    <MESSAGE value="Added &quot;backend&quot; package (used exclusively for back-end communication for front-end i.e. for AJAX). Added &quot;controllers&quot; package (routes and forms for adding new LAN devices). Added functions.js (exclusively for front-end i.e. for showing and hiding elements). Added Flask-Marshmallow used for converting SQLAlchemy objects into JSON format for front-end" />
+    <MESSAGE value="Javascript pulling and showin controllers that are existing in .db" />
+    <MESSAGE value="Created proper update fileds" />
+    <MESSAGE value="Grabbing values from input done" />
+    <MESSAGE value="Added &quot;Add new device&quot; button and simple working functionality" />
+    <MESSAGE value="&quot;/postavke&quot; front-end working properly." />
+    <MESSAGE value="Everything working except adding pins to a new controller" />
+    <MESSAGE value="testing with speech recognition" />
+    <MESSAGE value="sync, working on laptop" />
+    <MESSAGE value="sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="297" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594789397244">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="297" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1594789397244" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1594384624670" />
+    <state x="1216" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592866848462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1216" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592866848462" />
+    <state x="1120" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1600356891012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1120" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1600356891012" />
+    <state x="669" y="115" key="#sqa_3" timestamp="1592307821680">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="115" key="#sqa_3/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592307821680" />
+    <state x="669" y="115" key="#sqa_test" timestamp="1592247541383">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="115" key="#sqa_test/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592247541383" />
+    <state x="488" y="0" width="1287" height="640" key="CommitChangelistDialog2" timestamp="1594790480296">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="488" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1594790480296" />
+    <state x="376" y="167" width="1287" height="640" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1593715965658" />
+    <state width="425" height="438" key="DebuggerActiveHint" timestamp="1592308866651">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="425" height="438" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592308866651" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600367306653">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="617" y="227" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1594789396520" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1600367306652" />
+    <state width="1557" height="235" key="GridCell.Tab.0.bottom" timestamp="1594790523086">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="235" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1594790523086" />
+    <state width="1877" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1594394265410" />
+    <state width="1557" height="235" key="GridCell.Tab.0.center" timestamp="1594790523086">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="235" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1594790523086" />
+    <state width="1877" height="222" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1594394265409" />
+    <state width="1557" height="235" key="GridCell.Tab.0.left" timestamp="1594790523086">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="235" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1594790523086" />
+    <state width="1877" height="222" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1594394265399" />
+    <state width="1557" height="235" key="GridCell.Tab.0.right" timestamp="1594790523086">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="235" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1594790523086" />
+    <state width="1877" height="222" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1594394265409" />
+    <state width="908" height="345" key="GridCell.Tab.1.bottom" timestamp="1592750081821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="908" height="345" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592750081821" />
+    <state width="908" height="345" key="GridCell.Tab.1.center" timestamp="1592750081820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="908" height="345" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592750081820" />
+    <state width="908" height="345" key="GridCell.Tab.1.left" timestamp="1592750081819">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="908" height="345" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592750081819" />
+    <state width="908" height="345" key="GridCell.Tab.1.right" timestamp="1592750081821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="908" height="345" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592750081821" />
+    <state x="250" y="97" key="SettingsEditor" timestamp="1592665750471">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="384" y="136" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1591996418716" />
+    <state x="250" y="97" key="SettingsEditor/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592665750471" />
+    <state x="1287" y="438" key="VCS.ChangelistChooser" timestamp="1592315786254">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1287" y="438" key="VCS.ChangelistChooser/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592315786254" />
+    <state x="460" y="209" key="Vcs.Push.Dialog.v2" timestamp="1594790485949">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="460" y="209" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1594790485949" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1593715977059" />
+    <state x="641" y="359" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594181947085">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="641" y="359" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1594181947085" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592299535754" />
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1592745447980">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1592745447980" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sveIsvasta/voice2text/03.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ZAVRSNI$test.coverage" NAME="test Coverage Results" MODIFIED="1592140516785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZAVRSNI$audio2text___02.coverage" NAME="audio2text - 02 Coverage Results" MODIFIED="1593714138321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sveIsvasta/voice2text" />
+    <SUITE FILE_PATH="coverage/ZAVRSNI$run.coverage" NAME="run Coverage Results" MODIFIED="1594789400641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZAVRSNI$sqa_3.coverage" NAME="sqa_3 Coverage Results" MODIFIED="1592311387347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZAVRSNI$audio2text___01.coverage" NAME="audio2text - 01 Coverage Results" MODIFIED="1593713822123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sveIsvasta/voice2text" />
+    <SUITE FILE_PATH="coverage/ZAVRSNI$audio2text___03.coverage" NAME="audio2text - 03 Coverage Results" MODIFIED="1593714641566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sveIsvasta/voice2text" />
+    <SUITE FILE_PATH="coverage/ZAVRSNI$sqa_test.coverage" NAME="sqa_test Coverage Results" MODIFIED="1592247830870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ZAVRSNI$mqtt_test.coverage" NAME="mqtt_test Coverage Results" MODIFIED="1592167197713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
