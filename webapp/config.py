@@ -13,11 +13,11 @@ class Config:
 
     # For development (Win)
     # SECRET_KEY = os.environ.get("FLASK_SECRET_KEY")
-    # PSQL_SERVER_HOST = os.environ.get("PSQL_HOST")
-    # PSQL_SERVER_PORT = os.environ.get("PSQL_PORT")
-    # PSQL_SERVER_USER = os.environ.get("PSQL_USER")
-    # PSQL_SERVER_PASSWORD = os.environ.get("PSQL_PASS")
-    # PSQL_SERVER_DATABASE = os.environ.get("PSQL_DATABASE")
+    # PSQL_HOST = os.environ.get("PSQL_HOST")
+    # PSQL_PORT = os.environ.get("PSQL_PORT")
+    # PSQL_USER = os.environ.get("PSQL_USER")
+    # PSQL_PASSWORD = os.environ.get("PSQL_PASS")
+    # PSQL_DATABASE = os.environ.get("PSQL_DATABASE")
     # MAIL_SERVER = "smtp.googlemail.com"
     # MAIL_PORT = 587
     # MAIL_USE_TLS = True
@@ -26,11 +26,11 @@ class Config:
 
     # For production (Unix)
     SECRET_KEY = config.get("FLASK_SECRET_KEY")
-    PSQL_SERVER_HOST = config.get("PSQL_HOST")
-    PSQL_SERVER_PORT = config.get("PSQL_PORT")
-    PSQL_SERVER_USER = config.get("PSQL_USER")
-    PSQL_SERVER_PASSWORD = config.get("PSQL_PASS")
-    PSQL_SERVER_DATABASE = config.get("PSQL_DATABASE")
+    PSQL_HOST = config.get("PSQL_HOST")
+    PSQL_PORT = config.get("PSQL_PORT")
+    PSQL_USER = config.get("PSQL_USER")
+    PSQL_PASSWORD = config.get("PSQL_PASS")
+    PSQL_DATABASE = config.get("PSQL_DATABASE")
     MAIL_SERVER = "smtp.googlemail.com"
     MAIL_PORT = 587
     MAIL_USE_TLS = True
