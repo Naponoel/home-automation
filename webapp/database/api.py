@@ -122,7 +122,7 @@ def switch_pin_state():
     # command_string in format:
     # "{\"type\":\"requestCommand\", \"PR1\":1}"
     command_string = '{\"type\":\"requestCommand\", \"' + pin_embeded_name + '\":' + str(command_value) + '}'
-    mqtt.publish(topic=topic, payload=command_string)
+    mqtt.publish(topic=topic, payload=command_string, retain=False)
 
     with session_scope() as s:
         pin = s.query(Pin).filter_by(id=request.form["pin_id"]).one()
