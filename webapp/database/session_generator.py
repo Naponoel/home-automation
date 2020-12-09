@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from contextlib import contextmanager
 
 # todo: admin localhost i ostalo stavit u config.py
-DATABASE_URI = 'postgres+psycopg2://' + Config.psql_user + ':' + Config.psql_pass + '@' + Config.psql_ip + ':' + Config.psql_port + '/' + Config.psql_db_name
+DATABASE_URI = 'postgres+psycopg2://' + Config.PSQL_SERVER_USER + ':' + Config.PSQL_SERVER_PASSWORD + '@' + Config.PSQL_SERVER_HOST + ':' + Config.PSQL_SERVER_PORT + '/' + Config.PSQL_SERVER_DATABASE
 
 engine = create_engine(DATABASE_URI, echo=True)
 Session = sessionmaker(bind=engine)
